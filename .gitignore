@@ -1,0 +1,18 @@
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 检查点
+checkpoints/
+
+# 输出
+output/
+
+# 数据集（大文件）
+数据集/
+
+# 环境
+.env
+.venv
+venv/
