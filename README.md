@@ -11,7 +11,7 @@
 
 ## 项目简介 | Overview
 
-本项目针对 **GAMMA Challenge** 数据集，使用深度学习模型对眼底图像中的 **黄斑中心凹（Fovea）** 进行精确定位。项目从官方基线（ResNet50 + 3FC）出发，系统性地探索了多种改进方案：
+本项目基于 **百度飞桨 AI Studio 黄斑中心凹定位赛题**（[比赛链接](https://aistudio.baidu.com/competition/detail/806/0/introduction)）提供的眼底影像数据，使用深度学习模型对 **黄斑中心凹（Fovea）** 进行精确定位。项目从官方基线（ResNet50 + 3FC）出发，系统性地探索了多种改进方案：
 
 | 实验 | 方案 | Best AED | 像素误差 |
 |:---:|:---|:--------:|:--------:|
@@ -39,7 +39,7 @@
 │   ├── model.py           # 模型定义（ResNet + 坐标头 / 热图头）
 │   ├── loss.py            # 损失函数（MSE + ED 组合）
 │   └── utils.py           # 工具函数（可视化、指标计算）
-├── 数据集/                 # GAMMA Challenge 数据集（需自行下载）
+├── 数据集/                 # 百度飞桨赛题数据集（需自行下载）
 │   ├── training/
 │   └── testing/
 ├── train_baseline_origin.py          # Exp-00: 官方基线复现
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 ## 使用说明 | Usage
 
 ### 准备数据
-1. 下载 [GAMMA Challenge](https://gamma.grand-challenge.org/) 数据集
+1. 从 [百度飞桨 AI Studio 赛题页](https://aistudio.baidu.com/competition/detail/806/0/introduction) 下载数据集
 2. 将 `training/` 和 `testing/` 放入 `数据集/` 目录
 
 ### 训练模型
@@ -130,7 +130,7 @@ python visualize_progression.py      # 可视化训练过程
 
 ## 参考文献 | References
 
-- [GAMMA Challenge](https://gamma.grand-challenge.org/) — 眼底图像分析挑战赛
+- [百度飞桨 AI Studio · 黄斑中心凹定位赛题](https://aistudio.baidu.com/competition/detail/806/0/introduction) — 比赛与数据来源
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 - [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507)

@@ -1,7 +1,7 @@
 # 黄斑中心凹定位 — 实验报告
 
 > 项目：眼底图像黄斑中心凹坐标回归
-> 数据集：GAMMA Challenge（100 张标注训练图）
+> 数据集：百度飞桨 AI Studio 黄斑中心凹定位赛题（100 张标注训练图）
 > 框架：PyTorch, ResNet 系列 Backbone
 
 ***
